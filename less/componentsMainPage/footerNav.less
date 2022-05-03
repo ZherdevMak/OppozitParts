@@ -1,0 +1,47 @@
+.footer-nav {
+    //position: absolute;
+    width: 100%;
+    //flex-grow: 1;
+    bottom: 0;
+
+}
+.footer-nav-tab {
+    display: flex;
+    
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    justify-content: space-between;
+    
+    
+}
+.footer-nav-tab__element {
+    display: block;
+    &:hover {background-color: rgb(27, 27, 27);
+    }
+}
+.footer-nav-tab__link {
+    color: @main;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+        @media (min-width:@desktop-width) {
+        font-size: 18px;
+    }
+    &:active {
+        color: rgb(174, 168, 168);
+}}
+.footer-nav-email__element {
+    
+    color: @main;
+    margin-top: 0;
+    margin-bottom: 5 px;
+    padding-left: 25px;
+    font-size: 10px;
+    text-align: cleft;
+    line-height: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}   

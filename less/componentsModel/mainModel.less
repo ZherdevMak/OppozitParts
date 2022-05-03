@@ -1,0 +1,123 @@
+.models-main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.model-navMenu {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+}
+.model-navMenu--closed {
+    display: none;
+}
+
+.title-navMenu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.title-navMenu__span {
+    color: rgb(254, 254, 254);
+    font-size: 26px;
+    font-weight: bold;
+}
+.model-navMenu-table {
+  display: block;
+  
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: small;
+  border: none;
+  text-align: center;
+}
+
+// .model-navMenu-table__button--closed {
+//     display: none;
+// }
+.model-navMenu-table__button {
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 0;
+    width: 70px;
+    height: 52px;
+    padding: 0;        
+    background-color: rgb(87, 87, 87);
+    cursor: pointer;
+    border: 1px solid rgb(101, 101, 101);
+    color: rgb(87, 87, 87);
+    &:hover,
+    &:active {
+        background-color: rgb(68, 67, 67);
+}
+}
+.model-navMenu-table__span1 {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #ffffff;
+}
+.model-navMenu-table__span2 {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #ffffff;
+}
+.model-navMenu-table__element--first {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    border-top: 1px solid rgb(101, 101, 101);
+    border-bottom: 1px solid rgb(73, 73, 73);
+    &:hover {
+        background-color: rgb(73, 72, 72);
+    }
+    &:active {
+        background-color: rgb(60, 60, 60);
+    }
+
+}
+.model-navMenu-table__name {
+    color: @main;
+    margin: 10px auto;
+}
+
+.model-navMenu-table__element {
+    display: block;
+    width: 200px;
+    background-color: rgb(87, 87, 87);
+    border-top: 1px solid rgb(101, 101, 101);
+    border-bottom: 1px solid rgb(73, 73, 73);
+    &:hover {
+        background-color: rgb(73, 72, 72);
+    }
+    &:active {
+        background-color: rgb(60, 60, 60);
+    }
+
+}
+
+.model-navMenu-table__element p {
+    color: @main;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+

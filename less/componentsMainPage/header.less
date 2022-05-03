@@ -1,0 +1,42 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+  background-color: @footer-headerColor;
+ }
+  .conteiner {
+    display: grid;
+    grid-template-columns: 75px auto;
+    grid-template-rows: 75px auto;
+    
+    @media (min-width:@tablet-width) {
+      grid-template-rows: 75px 75px;
+      grid-template-columns: 150px auto;
+
+    }
+  .nav {
+    @media (min-width:@tablet-width) {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+  }
+    
+}
+  .title {
+    display: none;
+  }
+  .title-element  {
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: @main;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      @media (min-width:@tablet-width) {
+        padding-right: 150px; 
+      }
+}
+  
+  
+  
+  
+  
